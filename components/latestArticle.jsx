@@ -30,9 +30,9 @@ export const LatestArticle = ()=>{
             </Flex>
 
             <Box display={'flex'} justifyContent={'center'} alignItems={'center'} gap={2}>
-            <Button variant={'outline'} borderColor={'border'} onClick={()=>setCurrentPage(prev=>prev-1)} disabled={currentPage===1}>&lt;</Button>
+            <Button variant={'outline'} borderColor={'border'} onClick={()=>setCurrentPage(prev=>prev-1)} disabled={currentPage===1}>{`<`}</Button>
             <Text>{currentPage+'/'+totalPage}</Text>
-            <Button variant={'outline'} borderColor={'border'} onClick={()=>setCurrentPage(prev=>prev+1)} disabled={currentPage===totalPage}>&gt;</Button>
+            <Button variant={'outline'} borderColor={'border'} onClick={()=>setCurrentPage(prev=>prev+1)} disabled={currentPage===totalPage}>{`>`}</Button>
             </Box>
             
         </Stack>
